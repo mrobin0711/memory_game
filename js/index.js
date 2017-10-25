@@ -7,8 +7,40 @@
 
   
   playGame();
+            
+
+  function playGame() {
+
+    //if ('.tile').addClass('flipped');
+
+    $('.tile').click(function(){
+
+      $(this).addClass('flipped');
+      
+
+      if ($(".flipped").length == 3) {
+        $('.tile').removeClass('flipped');
+         var value = $('.flipped').find('img').attr('src');
+
+      //if ($('.flipped').eq() = ) {
+
+
+        //$(this).addClass('matched');
+      
+
+
+    });
+
+      $( ".tile" ).each(function( index ) {
+        var index = getImageIndex(),
+            imagePath = imageList[index];
+        $(this).html('<img src="'+imagePath+'" alt="" />');
+
+      });
   
-  function playGame() {}
+  };
+
+
 
   function getImageIndex() {
 
