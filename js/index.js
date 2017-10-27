@@ -21,14 +21,22 @@
       if ($(".flipped").length == 3) {
         $('.tile').removeClass('flipped');
          var value = $('.flipped').find('img').attr('src');
-
-      //if ($('.flipped').eq() = ) {
-
-
-        //$(this).addClass('matched');
       
 
+     // else ($(".flipped").length == 3) {
+     //   $('.tile').addClass('.matched');
+      //   var match = $('.matched').find('img').attr('src');
 
+      };   
+         
+    
+          
+  
+      
+
+        //$(this).addClass('matched');
+    
+      
     });
 
       $( ".tile" ).each(function( index ) {
